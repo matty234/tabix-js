@@ -13,7 +13,7 @@
   "engines": {
     "node": ">=6"
   },
-  "types": "./src/types.d.ts",
+  "types": "./types.d.ts",
   "files": [
     "dist"
   ],
