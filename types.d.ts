@@ -16,14 +16,14 @@ export class CSI {
 	parsePseudoBin(bytes: any, offset: any): any;
 }
 
-class TBIOptions {
+export class TBIOptions {
     filehandle: GenericFilehandle
 }
 
 export class TBI {
 	constructor(opts: TBIOptions & any);
 
-	async blocksForRange(ref: string, start: number, end: number, _x8: options): List<Chunk>;
+	blocksForRange(ref: string, start: number, end: number, _x8: any): Promise<Array<Chunk>>;
 
 	getMetadata(_x3: any): any;
 
