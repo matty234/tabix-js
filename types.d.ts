@@ -60,9 +60,8 @@ export class Chunk {
   minv: VirtualOffset;
   maxv: VirtualOffset;
   bin: number;
-  fetchedSize: number;
 
-  
+
 	constructor(minv: VirtualOffset, maxv: VirtualOffset, bin: number, fetchedSize: number);
 
 
