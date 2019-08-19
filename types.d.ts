@@ -1,4 +1,4 @@
-import { GenericFilehandle } from "generic-filehandle";
+import { GenericFilehandle } from 'generic-filehandle';
 
 export class CSI {
 	constructor(_ref: any);
@@ -17,7 +17,7 @@ export class CSI {
 }
 
 export class TBIOptions {
-    filehandle: GenericFilehandle
+	filehandle: GenericFilehandle;
 }
 
 export class TBI {
@@ -57,18 +57,18 @@ export class TabixIndexedFile {
 }
 
 export class Chunk {
-  minv: VirtualOffset;
-  maxv: VirtualOffset;
-  bin: number;
-
+	minv: VirtualOffset;
+	maxv: VirtualOffset;
+	bin: number;
 
 	constructor(minv: VirtualOffset, maxv: VirtualOffset, bin: number, fetchedSize: number);
 
-
-	fetchedSize() :number;
+	fetchedSize(): number;
 }
 
 export class VirtualOffset {
+	blockPosition: number;
+	dataPosition: number;
 	constructor(blockPosition: number, dataPosition: number);
 
 	static fromBytes(bytes: Int8Array, offset?: number, bigendian?: number): VirtualOffset;
