@@ -77,3 +77,6 @@ export class VirtualOffset {
 
 	static min(...args: Array<any>): number;
 }
+
+
+export function unzipChunk(buffer: ArrayBuffer, chunk: Chunk): ArrayBuffer;
