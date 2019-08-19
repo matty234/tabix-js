@@ -3,7 +3,7 @@ import { GenericFilehandle } from "generic-filehandle";
 export class CSI {
 	constructor(_ref: any);
 
-	blocksForRange(ref: string, start: number, end: number, _x8: options): List<Chunk>;
+	blocksForRange(ref: string, start: number, end: number, _x8: any): Promise<Array<Chunk>>;
 
 	getMetadata(_x3: any, ...args: any[]): any;
 
@@ -64,14 +64,17 @@ export class Chunk {
   * @param {number} [fetchedSize]
   */
 	constructor(minv: VirtualOffset, maxv: VirtualOffset, bin: number, fetchedSize: number);
+
+
+	fetchedSize() :number;
 }
 
 export class VirtualOffset {
 	constructor(blockPosition: number, dataPosition: number);
 
-	static fromBytes(bytes: Int8Array, offset?: number, bigendian?: number);
+	static fromBytes(bytes: Int8Array, offset?: number, bigendian?: number): VirtualOffset;
 
-	compareTo(b: any);
+	compareTo(b: any): number;
 
-	static min(...args);
+	static min(...args: Array<any>): number;
 }
