@@ -15,7 +15,8 @@
   },
   "types": "./types.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "types.d.ts"
   ],
   "scripts": {
     "test": "jest",
