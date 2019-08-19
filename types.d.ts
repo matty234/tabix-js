@@ -57,12 +57,12 @@ export class TabixIndexedFile {
 }
 
 export class Chunk {
-	/**
-  * @param {VirtualOffset} minv
-  * @param {VirtualOffset} maxv
-  * @param {number} bin
-  * @param {number} [fetchedSize]
-  */
+  minv: VirtualOffset;
+  maxv: VirtualOffset;
+  bin: number;
+  fetchedSize: number;
+
+  
 	constructor(minv: VirtualOffset, maxv: VirtualOffset, bin: number, fetchedSize: number);
 
 
