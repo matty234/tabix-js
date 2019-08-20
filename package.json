@@ -47,7 +47,7 @@
     "@babel/runtime-corejs2": "^7.3.1",
     "abortable-promise-cache": "^1.0.1",
     "es6-promisify": "^6.0.1",
-    "generic-filehandle": "^2.0.0",
+    "generic-filehandle": "github:matty234/generic-filehandle",
     "long": "^4.0.0",
     "pako": "1.0.10",
     "quick-lru": "^2.0.0"
