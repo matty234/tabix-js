@@ -39,7 +39,7 @@ export class TabixIndexedFile {
 
 	checkLine(_ref3: any, regionRefName: any, regionStart: any, regionEnd: any, line: any): any;
 
-	getHeader(...args: any[]): any;
+	getHeader(): Promise<string>;
 
 	getHeaderBuffer(_x8: any, ...args: any[]): any;
 
